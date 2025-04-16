@@ -1,0 +1,107 @@
+quesiton 1,
+% Number of rows for the triangles
+n = 5;
+
+% Loop to create the inverted triangle
+for i = 0:n-1
+    % Print leading spaces
+    for j = 1:i
+        fprintf(' ');
+    end
+    
+    % Print asterisks
+    for k = 1:(n-i)
+        fprintf('*');
+    end
+    
+    % Move to the next line
+    fprintf('\n');
+end
+
+% Loop to create the right-side-up triangle
+for i = 1:n
+    % Print leading spaces
+    for j = n-1:-1:i
+        fprintf(' ');
+    end
+    
+    % Print asterisks
+    for k = 1:i
+        fprintf('*');
+    end
+    
+    % Move to the next line
+    fprintf('\n');
+end
+
+
+
+
+
+question2,
+% Number of rows for the inverted pyramid
+n = 5;
+
+% Loop to create the inverted pyramid
+for i = 0:n-1
+    % Print leading spaces
+    for j = 1:i
+        fprintf(' ');
+    end
+    
+    % Print asterisks
+    for k = 1:(2*(n-i)-1)
+        fprintf('*');
+    end
+    
+    % Move to the next line
+    fprintf('\n');
+end
+
+
+
+question 3,
+% Number of rows for the triangles
+n = 5;
+
+% Loop to create the inverted triangle
+for i = n:-1:1
+    % Print asterisks
+    for j = 1:i
+        fprintf('*');
+    end
+    % Move to the next line
+    fprintf('\n');
+end
+
+% Loop to create the right-side-up triangle
+for i = 2:n
+    % Print asterisks
+    for j = 1:i
+        fprintf('*');
+    end
+    % Move to the next line
+    fprintf('\n');
+end
+
+
+question 4,
+% Number of rows for the pyramid
+n = 5;
+
+% Loop to create the pyramid
+for i = 0:n-1
+    % Print leading spaces
+    for j = n-1:-1:i+1
+        fprintf(' ');
+    end
+    
+    % Print asterisks
+    for k = 1:(2*i + 1)
+        fprintf('*');
+    end
+    
+    % Move to the next line
+    fprintf('\n');
+end
+
